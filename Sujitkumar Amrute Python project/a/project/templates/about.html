@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://html5-templates.com/" />
+    <title>Responsive HTML5 Page Layout Template</title>
+    <meta name="description" content="Simple HTML5 Page layout template with header, footer, sidebar etc.">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js"></script>
+</head>
+
+<body>
+	<header>
+		<div id="logo"><img src="../static/logo1.png">Coffee &nbsp; Website</div>
+		<nav>  
+			<ul>
+				<li><a href="{{url_for('index')}}">Home</a>
+				<li><a href="{{url_for('contact')}}">Contact</a>
+				<li><a href="{{url_for('about')}}">About</a>
+				<li><a href="{{url_for('allusers')}}">All Users</a>
+			</ul>
+		</nav>
+	</header>
+	
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>about</span> us </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="../static/about-img.jpeg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>what makes our coffee special?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui ea ullam, enim tempora ipsum fuga alias quae ratione a officiis id temporibus autem? Quod nemo facilis cupiditate. Ex, vel?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit amet enim quod veritatis, nihil voluptas culpa! Neque consectetur obcaecati sapiente?</p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+    </div>
+
+</section>
+	<style>
+		:root{
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    background:var(--black);
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex:1 1 45rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+.about .row .content{
+    flex:1 1 45rem;
+    padding:2rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color:#fff;
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color:#ccc;
+    padding:1rem 0;
+    line-height: 1.8;
+}
+.heading{
+	padding-top: 40px;
+    text-align: center;
+    color:rgb(27, 26, 26);
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+	</style>
+	<footer>
+		<p>&copy; You can copy, edit and publish this template but please leave a link to our website | <a href="https://html5-templates.com/" target="_blank" rel="nofollow">HTML5 Templates</a></p>
+		<address>
+			Contact: <a href="mailto:me@example.com">Mail me</a>
+		</address>
+	</footer>
+
+
+</body>
+
+</html>

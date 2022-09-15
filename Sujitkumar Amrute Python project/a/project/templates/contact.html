@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://html5-templates.com/" />
+    <title>Responsive HTML5 Page Layout Template</title>
+    <meta name="description" content="Simple HTML5 Page layout template with header, footer, sidebar etc.">
+	<link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js"></script>>
+</head>
+
+<body>
+	<header>
+		<div id="logo"><img src="../static/logo1.png">Coffee &nbsp; Website</div>
+		<nav>  
+			<ul>
+				<li><a href="{{url_for('index')}}">Home</a>
+				<li><a href="{{url_for('contact')}}">Contact</a>
+				<li><a href="{{url_for('about')}}">About</a>
+				<li><a href="{{url_for('allusers')}}">All Users</a>
+			</ul>
+		</nav>
+	</header>
+	<section class="contact" id="contact">
+
+		<h1 class="heading"> <span>contact</span> us </h1>
+	
+		<div class="row">
+	
+			<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30153.788252261566!2d72.82321484621745!3d19.141690214227783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1629452077891!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+	        
+			<!-- <iframe class="map" src="https://www.google.com/maps/dir/FabHotel+Lakme,+1200%2F1+Ghole+Road,+Near+Tukaram+Paduka+Chowk+Fergusson+College,+Fergusson+College+Rd,+Shivajinagar,+Pune,+Maharashtra+411004/Vaishali+Hotel,+FWXX%2BP3F,+Gajanan+Colony,+Utkarsh+Nagar,+Hadapsar,+Pune,+Maharashtra+411028/@18.5153861,73.8611762,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x3bc2c07f606f8c9b:0xa6f3ba48f5ba3b90!2m2!1d73.8420153!2d18.524341!1m5!1m1!1s0x3bc2c20589d744c7:0xb707ef4c55e266e0!2m2!1d73.9476592!2d18.4993255?hl=en" allowfullscreen="" loading="lazy"></iframe> -->
+			<!-- <form action="">
+				<h3>get in touch</h3>
+				<div class="inputBox">
+					<span class="fas fa-user"></span>
+					<input type="text" placeholder="name">
+				</div>
+				<div class="inputBox">
+					<span class="fas fa-envelope"></span>
+					<input type="email" placeholder="email">
+				</div>
+				<div class="inputBox">
+					<span class="fas fa-phone"></span>
+					<input type="number" placeholder="number">
+				</div>
+				<input type="submit" value="contact now" class="btn">
+			</form> -->
+	
+	</section>
+	
+    </div class="heading">
+    <h2> FC Road, Oppsite to Vaishali Hotel, Pune, Maharastra</h2>
+    <h3> Contact Details: 9764910505</h3>
+    </div>
+	<footer>
+		<p>&copy; You can copy, edit and publish this template but please leave a link to our website | <a href="https://html5-templates.com/" target="_blank" rel="nofollow">HTML5 Templates</a></p>
+		<address>
+			Contact: <a href="mailto:me@example.com">Mail me</a>
+		</address>
+	</footer>
+<style>
+	:root{
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+*{
+    font-family: 'Roboto', sans-serif;
+	background-color: black;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+.heading{
+	padding-top: 40px;
+    text-align: center;
+    color:rgb(27, 26, 26);
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+.contact .row{
+    display: flex;
+    background:var(--black);
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+.contact .row .map{
+    flex:1 1 45rem;
+    width: 70%;
+	height: 100vh;
+    object-fit: cover;
+}
+
+.contact .row form{
+    flex:1 1 45rem;
+    padding:5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color:#fff;
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background:var(--bg);
+    border:var(--border);
+}
+
+.contact .row form .inputBox span{
+    color:#fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+.contact_details{
+	margin-left: 50px;
+}
+
+.contact .row form .inputBox input{
+    width: 100%;
+    padding:2rem;
+    font-size: 1.7rem;
+    color:#fff;
+    text-transform: none;
+    background:none;
+}
+section{
+    padding:2rem 7%;
+}
+</style>
+
+</body>
+
+</html>

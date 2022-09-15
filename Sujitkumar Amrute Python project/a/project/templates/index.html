@@ -1,0 +1,246 @@
+<!doctype html> 
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://html5-templates.com/" />
+    <title>Responsive HTML5 Page Layout Template</title>
+    <meta name="description" content="Simple HTML5 Page layout template with header, footer, sidebar etc.">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js"></script>
+</head>
+
+<body>
+	<header>
+		<div id="logo"><img src="../static/logo1.png">Coffee &nbsp; Website</div>
+		<nav>  
+			<ul>
+				<li><a href="{{url_for('index')}}">Home</a>
+				<li><a href="{{url_for('contact')}}">Contact</a>
+				<li><a href="{{url_for('about')}}">About</a>
+				<li><a href="{{url_for('allusers')}}">All Users</a>
+			</ul>
+			
+		</nav>
+		
+	</header>
+	<section>
+		
+	</section>
+	<section id="pageContent">
+		<main role="main">
+			<section class="home" id="home">
+
+				<div class="content">
+					<h3>fresh coffee in the morning</h3>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat labore, sint cupiditate distinctio tempora reiciendis.</p>
+					<a href="#" class="btn">get yours now</a>
+				</div>
+			
+			</section>
+			<section class="menu" id="menu">
+
+				<h1 class="price"> our <span>menu</span> </h1>
+			
+				<div class="box-container">
+			
+					<div class="box">
+						<img src="../static/menu-1.png" alt="">
+						<h2 class="price"> Black Coffee</h2>
+						<h3>tasty and healty</h3>
+						<div class="price">$15.99 <span>20.99</span></div>
+						<a href="#" class="btn">add to cart</a>
+					</div>
+			
+					<div class="box">
+						<img src="../static/menu-2.png" alt="">
+						<h2 class="price"> Espresso</h2>
+						<h3>tasty and healty</h3>
+						<div class="price">$15.99 <span>20.99</span></div>
+						<a href="#" class="btn">add to cart</a>
+					</div>
+			
+					<div class="box">
+						<img src="../static/menu-3.png" alt="">
+						<h2 class="price">Cappucino</h2>
+						<h3>tasty and healty</h3>
+						<div class="price">$15.99 <span>20.99</span></div>
+						<a href="#" class="btn">add to cart</a>
+					</div>
+			
+					<div class="box">
+						<img src="../static/menu-4.png" alt="">
+						<h2 class="price"> Latte</h2>
+						<h3>tasty and healty</h3>
+						<div class="price">$15.99 <span>20.99</span></div>
+						<a href="#" class="btn">add to cart</a>
+					</div>
+			
+					<div class="box">
+						<img src="../static/menu-5.png" alt="">
+						<h2 class="price"> Cold Brew</h2>
+						<h3>tasty and healty</h3>
+						<div class="price">$15.99 <span>20.99</span></div>
+						<a href="#" class="btn">add to cart</a>
+					</div>
+			
+					<div class="box">
+						<img src="../static/menu-6.png" alt="">
+						<h2 class="price"> Caffee Mocha</h2>
+						<h3>tasty and healty</h3>
+						<div class="price">$15.99 <span>20.99</span></div>
+						<a href="#" class="btn">add to cart</a>
+					</div>
+			
+				</div>
+			
+			</section>
+	<footer>
+		<p>&copy; You can copy, edit and publish this template but please leave a link to our website | <a href="https://html5-templates.com/" target="_blank" rel="nofollow">HTML5 Templates</a></p>
+		<address>
+			Contact: <a href="mailto:me@example.com">Mail me</a>
+		</address>
+	</footer>
+
+<style>
+	:root{
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+	background-color: black;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+.heading{
+	padding-top: 40px;
+    text-align: center;
+    color:rgb(27, 26, 26);
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.menu .box-container .box{
+    padding:0.5rem;
+    text-align: center;
+    border:var(--border);    
+}
+.header .icons div{
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+.header .icons div:hover{
+    color:var(--main-color);
+}
+
+#menu-btn{
+    display: none;
+}
+
+
+.menu .box-container .box img{
+    height: 10rem;
+}
+
+.menu .box-container .box h4 h2{
+	line-height: 1.5;
+    color: #fff;
+    font-size: 2rem;
+    padding:1rem 0;
+}
+section{
+    padding:2rem 7%;
+}
+
+.menu .box-container .box .price{
+    color: #fff;
+    font-size: 2.5rem;
+    padding:.5rem 0;
+}
+
+.menu .box-container .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.menu .box-container .box:hover{
+    background:#fff;
+}
+
+.menu .box-container .box:hover > *{
+    color:var(--black);
+}
+
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+.home{
+
+    min-height: 100vh;
+	min-width: 1000px;
+    display: flex;
+    align-items: center;
+    background:url(../static/home-img.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+	}
+.home .content{
+    max-width: 60rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color:#fff;
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding:1rem 0;
+    color:#eee;
+}
+
+</style>
+</body>
+
+</html>
